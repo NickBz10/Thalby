@@ -33,12 +33,28 @@ header nav ul li a{
     line-height: 165%;
     color: #1c1b1b;
     text-decoration: none;
+    border-bottom: solid 1px transparent;
+}
+
+header nav ul li a:hover{
+    background-color: #ffffff;
+    color: #1c1b1b;
+    border-bottom: solid 1px #1c1b1b;
 }
 
 .desktop_control ul{
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+.desktop_control ul li a{
+    display: inline-block;
+}
+
+.desktop_control ul li a:hover{
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
 }
 
 .banner .container{
@@ -81,6 +97,11 @@ header nav ul li a{
     font-size: 17px;
     color: #fff;
     text-decoration: none;
+}
+
+.banner article a:hover{
+    background-color: #fff;
+    color: #000;
 }
 
 /* Лучшие предложения */
@@ -163,6 +184,10 @@ header nav ul li a{
     margin-left: 111px;
 }
 
+.books a:hover{
+    text-decoration: none;
+}
+
 /* Люди и общество */
 
 .people_and_society .container{
@@ -204,6 +229,10 @@ header nav ul li a{
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #000;
+}
+
+.people_and_society article a:hover{
+    text-decoration: none;
 }
 
 /* Культура и наследие */
@@ -250,6 +279,10 @@ header nav ul li a{
     margin-left: 335px;
 }
 
+.culture_and_heritage article a:hover{
+    text-decoration: none;
+}
+
 /* Политика и власть */
 
 .power_and_politics .container{
@@ -291,6 +324,10 @@ header nav ul li a{
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #000;
+}
+
+.power_and_politics article a:hover{
+    text-decoration: none;
 }
 
 /* Особенности Талби */
@@ -447,6 +484,10 @@ header nav ul li a{
     margin-left: 107px;
 }
 
+.interview_item a:hover{
+    text-decoration: none;
+}
+
 /* Форма для обратной связи */
 
 .get_advice .container{
@@ -518,6 +559,11 @@ input[type="email"] {
     margin-left: 126px;
 }
 
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
 /* Подвал */
 
 footer{
@@ -548,6 +594,15 @@ footer .container{
     gap: 20px;
 }
 
+.media_icon {
+    display: inline-block;
+}
+
+.media_icon:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+}
+
 .roadmap{
     display: flex;
     justify-content: space-between;
@@ -570,6 +625,10 @@ footer .container{
     line-height: 250%;
     color: #fff;
     text-decoration: none;
+}
+
+.roadmap ul li a:hover{
+    text-decoration: underline;
 }
 
 footer p{
