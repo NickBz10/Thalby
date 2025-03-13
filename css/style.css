@@ -429,6 +429,7 @@ header nav ul li a:hover{
 .interviews .container{
     display: block;
     background: linear-gradient(180deg, #fff 50%, #f0f0f0 50%);
+    padding-top: 52px;
     padding-left: 188px;
     padding-right: 188px;
     padding-bottom: 52px;

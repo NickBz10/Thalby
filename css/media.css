@@ -1,7 +1,183 @@
-@media only screen and (max-width: 960px){
+@media only screen and (max-width: 430px){
+    header{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    header nav{
+        margin-left: 0;
+    }
+    header nav ul {
+        gap: 10px;
+    }
+    header nav{
+        display: none;
+    }
+    header a img{
+        margin-left: 160px;
+    }
+    .desktop_control ul{
+        gap: 5px;
+    }
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .banner .container{
+        flex-direction: column-reverse;
+        padding-bottom: 60px;
+    }
+    .banner article{
+        padding-left: 0;
+        max-width: 400px;
+    }
+    .banner article img{
+        max-width: 400px;
+        margin-left: 0;
+    }
+    .banner article h1{
+        margin-bottom: 32px;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    .people_and_society .container{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    .people_and_society article img{
+        padding-left: 0;
+    }
+    .people_and_society_dscr{
+        margin-left: 0;
+        padding-right: 0;
+    }
 
-}
-
-@media only screen and (max-width: 360px){
-    
+    .culture_and_heritage .container{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    .culture_and_heritage article img{
+        padding-right: 0;
+    }
+    .culture_and_heritage_dscr{
+        margin-right: 0;
+        padding-left: 0;
+    }
+    .culture_and_heritage article h3{
+        text-align: left;
+    }
+    .culture_and_heritage article p{
+        text-align: left;
+    }
+    .culture_and_heritage article a{
+        margin-left: 0;
+    }
+    .power_and_politics .container{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    .power_and_politics article img{
+        padding-left: 0;
+    }
+    .power_and_politics_dscr{
+        margin-left: 0;
+        padding-right: 0;
+    }
+    .thalby_features .container{
+        display: block;
+        padding-top: 60px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .features{
+        margin-bottom: 0;
+    }
+    .features_item{
+        width: 188px;
+        height: 250px;
+        margin-bottom: 0;
+        gap: 0;
+    }
+    .circle_1{
+        margin-left: 64px;
+    }
+    .circle_2{
+        margin-left: 64px;
+    }
+    .circle_3{
+        margin-left: 64px;
+    }
+    .circle_4{
+        margin-left: 64px;
+    }
+    .circle_5{
+        margin-left: 64px;
+    }
+    .circle_6{
+        margin-left: 64px;
+    }
+    .interviews .container{
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        background: none;
+    }
+    .interview{
+        flex-direction: column;
+    }
+    .interview_item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(180deg, #fff 50%, #f0f0f0 50%);
+        padding-bottom: 20px;
+    }
+    .interview_item img{
+        margin-bottom: 20px;
+    }
+    .interview_item h4{
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 15px;
+    }
+    .interview_item p{
+        margin-bottom: 25px;
+    }
+    .interview_item a{
+        margin-left: 0;
+    }
+    .get_advice .container{
+        padding-top: 40px;
+    }
+    .get_advice form{
+        margin-bottom: 40px;
+    }
+    footer .container{
+        padding-top: 20px;
+        padding-left: 0;
+        padding-right: 0;
+        flex-direction: column;
+    }
+    .links{
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+        margin-bottom: 30px;
+    }
+    .links img{
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .roadmap{
+        gap: 100px;
+    }
+    .roadmap ul li:first-of-type{
+        margin-bottom: 20px;
+    }
 }
