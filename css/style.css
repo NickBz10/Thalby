@@ -574,9 +574,10 @@ footer{
 footer .container{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     padding-top: 51px;
-    padding-left: 148px;
-    padding-right: 148px;
+    padding-left: 173px;
+    padding-right: 173px;
     margin-bottom: 20px;
 }
 
@@ -585,18 +586,12 @@ footer .container{
 }
 
 .links img{
-    margin-left: 25px;
     margin-bottom: 25px;
 }
 
 .social-media{
-    margin-left: 25px;
     display: flex;
     gap: 20px;
-}
-
-.media_icon {
-    display: inline-block;
 }
 
 .media_icon:hover {
