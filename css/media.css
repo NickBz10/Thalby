@@ -287,7 +287,9 @@
         padding-bottom: 60px;
     }
     .banner article img{
-        margin-left: 0;
+        max-width: 288px;
+        height: 351px;
+        margin-left: 40px;
     }
     .banner article{
         width: 320px;
@@ -354,11 +356,6 @@
 }
 
 @media only screen and (max-width: 420px){
-    .banner article img{
-        max-width: 288px;
-        height: 351px;
-        margin-left: 40px;
-    }
     .people_and_society article img{
         max-width: 288px;
         height: 401px;

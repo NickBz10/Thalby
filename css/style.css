@@ -155,11 +155,21 @@ header nav ul li a:hover{
     margin-bottom: 240px;
 }
 
+.books {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .books img{
     width: 315px;
     height: 430px;
     margin-bottom: 19px;
 }
+
+.owl-carousel .owl-item img {
+    width: 315px;
+  }
 
 .books_dscr_one{
     font-weight: 700;
@@ -183,7 +193,7 @@ header nav ul li a:hover{
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #000;
-    margin-left: 111px;
+    align-items: center;
 }
 
 .books a:hover{
@@ -454,7 +464,9 @@ header nav ul li a:hover{
 }
 
 .interview_item{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .interview_item img{
@@ -486,7 +498,6 @@ header nav ul li a:hover{
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #000;
-    margin-left: 107px;
 }
 
 .interview_item a:hover{

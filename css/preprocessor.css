@@ -156,10 +156,20 @@ header nav ul li a:hover {
   margin-bottom: 240px;
 }
 
+.books {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .books img {
   width: 315px;
   height: 430px;
   margin-bottom: 19px;
+}
+
+.owl-carousel .owl-item img {
+  width: 315px;
 }
 
 .books_dscr_one {
@@ -185,7 +195,6 @@ header nav ul li a:hover {
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
   color: #000;
-  margin-left: 111px;
 }
 .books a:hover {
   text-decoration: none;
@@ -203,21 +212,26 @@ header nav ul li a:hover {
   width: 385px;
   height: 525px;
 }
-.people_and_society article img h3 {
+
+.people_and_society_dscr {
+  margin-left: 50px;
+  padding-right: 235px;
+}
+.people_and_society_dscr h3 {
   font-weight: 700;
   font-size: 36px;
   color: #000;
   text-align: left;
   margin-bottom: 31px;
 }
-.people_and_society article img p {
+.people_and_society_dscr p {
   font-weight: 400;
   font-size: 36px;
   color: #000;
   text-align: left;
   margin-bottom: 40px;
 }
-.people_and_society article img a {
+.people_and_society_dscr a {
   font-weight: 700;
   font-size: 17px;
   text-decoration: underline;
@@ -225,13 +239,8 @@ header nav ul li a:hover {
           text-decoration-skip-ink: none;
   color: #000;
 }
-.people_and_society article img a:hover {
+.people_and_society_dscr a:hover {
   text-decoration: none;
-}
-
-.people_and_society_dscr {
-  margin-left: 50px;
-  padding-right: 235px;
 }
 
 /* Культура и наследие */
@@ -246,36 +255,38 @@ header nav ul li a:hover {
   width: 385px;
   height: 525px;
 }
-.culture_and_heritage article img h3 {
+
+.culture_and_heritage_dscr {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  padding-left: 235px;
+}
+.culture_and_heritage_dscr h3 {
   font-weight: 700;
   font-size: 36px;
   color: #000;
   text-align: right;
   margin-bottom: 31px;
 }
-.culture_and_heritage article img p {
+.culture_and_heritage_dscr p {
   font-weight: 400;
   font-size: 36px;
   color: #000;
   text-align: right;
   margin-bottom: 40px;
 }
-.culture_and_heritage article img a {
+.culture_and_heritage_dscr a {
   font-weight: 700;
   font-size: 17px;
   text-decoration: underline;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
   color: #000;
-  text-align: end;
+  align-self: flex-end;
 }
-.culture_and_heritage article img a:hover {
+.culture_and_heritage_dscr a:hover {
   text-decoration: none;
-}
-
-.culture_and_heritage_dscr {
-  margin-right: 50px;
-  padding-left: 235px;
 }
 
 /* Политика и власть */
@@ -290,21 +301,26 @@ header nav ul li a:hover {
   width: 385px;
   height: 525px;
 }
-.power_and_politics article img h3 {
+
+.power_and_politics_dscr {
+  margin-left: 50px;
+  padding-right: 235px;
+}
+.power_and_politics_dscr h3 {
   font-weight: 700;
   font-size: 36px;
   color: #000;
   text-align: left;
   margin-bottom: 31px;
 }
-.power_and_politics article img p {
+.power_and_politics_dscr p {
   font-weight: 400;
   font-size: 36px;
   color: #000;
   text-align: left;
   margin-bottom: 40px;
 }
-.power_and_politics article img a {
+.power_and_politics_dscr a {
   font-weight: 700;
   font-size: 17px;
   text-decoration: underline;
@@ -312,13 +328,8 @@ header nav ul li a:hover {
           text-decoration-skip-ink: none;
   color: #000;
 }
-.power_and_politics article img a:hover {
+.power_and_politics_dscr a:hover {
   text-decoration: none;
-}
-
-.power_and_politics_dscr {
-  margin-left: 50px;
-  padding-right: 235px;
 }
 
 /* Особенности Талби */
@@ -436,7 +447,9 @@ header nav ul li a:hover {
 }
 
 .interview_item {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .interview_item img {
   width: 288px;
@@ -465,7 +478,7 @@ header nav ul li a:hover {
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
   color: #000;
-  margin-left: 107px;
+  align-items: center;
 }
 .interview_item a:hover {
   text-decoration: none;
@@ -546,6 +559,15 @@ input[type=email] {
 footer {
   background: #000;
 }
+footer p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 165%;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 16px;
+}
 
 footer .container {
   display: flex;
@@ -554,15 +576,6 @@ footer .container {
   padding-top: 51px;
   padding-left: 173px;
   padding-right: 173px;
-  margin-bottom: 20px;
-}
-footer .container p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 165%;
-  text-align: center;
-  color: #fff;
 }
 
 .links {

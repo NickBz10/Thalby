@@ -165,10 +165,18 @@ header{
     gap: 60px;
     margin-bottom: 240px;
 }
+.books {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .books img{
     width: 315px;
     height: 430px;
     margin-bottom: 19px;
+}
+.owl-carousel .owl-item img {
+    width: 315px;
 }
 .books_dscr_one{
     font-weight: $main_weight;
@@ -190,7 +198,6 @@ header{
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: $main_color;
-    margin-left: 111px;
     &:hover{
         text-decoration: none;
     }
@@ -432,7 +439,9 @@ header{
     gap: 100px;
 }
 .interview_item{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     img{
         width: 288px;
         height: 351px;
@@ -459,7 +468,7 @@ header{
         text-decoration: underline;
         text-decoration-skip-ink: none;
         color: $main_color;
-
+        align-items: center;
         &:hover{
             text-decoration: none;
         }
