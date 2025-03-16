@@ -82,7 +82,9 @@ header nav ul li a:hover{
 }
 
 .banner article img{
-    max-width: 599px;
+    width: 383px;
+    height: 521px;
+    padding-right: 188px;
     margin-left: -60px;
 }
 
@@ -250,6 +252,8 @@ header nav ul li a:hover{
 }
 
 .culture_and_heritage_dscr{
+    display: flex;
+    flex-direction: column;
     margin-right: 50px;
     padding-left: 235px;
 }
@@ -276,7 +280,7 @@ header nav ul li a:hover{
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #000;
-    margin-left: 335px;
+    text-align: end;
 }
 
 .culture_and_heritage article a:hover{

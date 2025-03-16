@@ -1,0 +1,599 @@
+@import "reset.css";
+@import "normalize.css";
+
+$main_color: #000;
+$second_color: #fff;
+$main_font: "Roboto", sans-serif;
+$main_weight: 700;
+$second_weight: 400;
+$main_size: 36px;
+$second_size: 17px;
+
+@mixin max-screen($res) {
+    @media screen and (max-width: $res){
+        @content;
+    }
+}
+
+*{ 
+    padding: 0;
+    margin: 0;
+    font-family: $main_font;
+}
+
+/* Главная страница */
+
+.container{
+    max-width: 1440px; 
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    padding-left: 188px;
+    padding-right: 188px;
+    @include max-screen(960px){
+        padding-left: 0;
+        padding-right: 0;
+    }
+    nav{
+        ul{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 28px;
+            li{
+                a{
+                    font-family: $main_font;
+                    font-weight: $main_weight;
+                    font-size: 16px;
+                    line-height: 165%;
+                    color: $main_color;
+                    text-decoration: none;
+                    border-bottom: solid 1px transparent;
+                    &:hover{
+                        background-color: $second_color;
+                        color: $main_color;
+                        border-bottom: solid 1px $main_color;
+                    }
+                }
+            } 
+        }
+    } 
+}
+.desktop_control{
+    ul{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        li{
+            a{
+                display: inline-block;
+                &:hover{
+                    transform: scale(1.5);
+                    transition: transform 0.3s ease;
+                }
+            }
+        } 
+    }
+}
+.banner .container{
+    background: #f0efeb;
+    margin-bottom: 60px;
+}
+.banner article{
+    padding-left: 188px;
+    max-width: 544px;
+    h1{
+        font-weight: $main_weight;
+        font-size: 60px;
+        color: $main_color;
+        margin-bottom: 42px;
+    }
+    p{
+        font-weight: $second_weight;
+        font-size: 24px;
+        color: $main_color;
+        margin-bottom: 26px;
+    }
+    img{
+        max-width: 383px;
+        height: 521px;
+        padding-right: 188px;
+        @include max-screen(1024px){
+            width: 450px;
+        }
+    }
+    a{
+        border: 1px solid $main_color;
+        border-radius: 100px;
+        width: 129px;
+        height: 36px;
+        background: $main_color;
+        padding: 8px 23px;
+        font-weight: $second_weight;
+        font-size: $second_size;
+        color: #fff;
+        text-decoration: none;
+        &:hover{
+            background-color: $second_color;
+            color: $main_color;
+        }
+    }
+}
+
+/* Лучшие предложения */
+
+.best_sellers .container{
+    display: block;
+}
+.descriptions{
+    text-align: center;
+}
+.dscr_title_one{
+    font-weight: $main_weight;
+    font-size: $main_size;
+    text-align: center;
+    color: $main_color;
+    margin-bottom: 27px;
+}
+.dscr_one{
+    font-weight: $second_weight;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 47px;
+}
+.dscr_two{
+    font-weight: $second_weight;
+    font-size: 20px;
+    text-align: center;
+    color: $main_color;
+    margin-bottom: 88px;
+}
+.dscr_title_two{
+    font-weight: $main_weight;
+    font-size: $main_size;
+    text-align: center;
+    color: $main_color;
+    margin-bottom: 52px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 240px;
+}
+.books img{
+    width: 315px;
+    height: 430px;
+    margin-bottom: 19px;
+}
+.books_dscr_one{
+    font-weight: $main_weight;
+    font-size: $second_size;
+    text-align: center;
+    color: $main_color;
+    margin-bottom: 17px;
+}
+.books_dscr_two{
+    font-weight: $second_weight;
+    font-size: $second_size;
+    text-align: center;
+    color: $main_color;
+    margin-bottom: 10px;
+}
+.books a{
+    font-weight: $main_weight;
+    font-size: $second_size;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: $main_color;
+    margin-left: 111px;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+/* Люди и общество */
+
+.people_and_society .container{
+    background: rgba(204, 204, 204, 0.3);
+}
+
+.people_and_society article img{
+    padding-top: 76px;
+    padding-left: 188px;
+    padding-bottom: 51px;
+    width: 385px;
+    height: 525px;
+}
+.people_and_society_dscr{
+    margin-left: 50px;
+    padding-right: 235px;
+    h3{
+        font-weight: $main_weight;
+        font-size: $main_size;
+        color: $main_color;
+        text-align: left;
+        margin-bottom: 31px;
+    }
+    p{
+        font-weight: $second_weight;
+        font-size: $main_size;
+        color: $main_color;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    a{
+        font-weight: $main_weight;
+        font-size: $second_size;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: $main_color;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+
+/* Культура и наследие */
+
+.culture_and_heritage .container{
+    background: rgba(204, 204, 204, 0.6);
+}
+
+.culture_and_heritage article img{
+    padding-top: 76px;
+    padding-right: 188px;
+    padding-bottom: 51px;
+    width: 385px;
+    height: 525px;
+}
+.culture_and_heritage_dscr{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    padding-left: 235px;
+    h3{
+        font-weight: $main_weight;
+        font-size: $main_size;
+        color: $main_color;
+        text-align: right;
+        margin-bottom: 31px;
+    }
+    p{
+        font-weight: $second_weight;
+        font-size: $main_size;
+        color: $main_color;
+        text-align: right;
+        margin-bottom: 40px;
+    }
+    a{
+        font-weight: $main_weight;
+        font-size: $second_size;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: $main_color;
+        align-self: flex-end;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+
+/* Политика и власть */
+
+.power_and_politics .container{
+    background: rgba(204, 204, 204, 0.3);
+}
+
+.power_and_politics article img{
+    padding-top: 76px;
+    padding-left: 188px;
+    padding-bottom: 51px;
+    width: 385px;
+    height: 525px;
+}
+.power_and_politics_dscr{
+    margin-left: 50px;
+    padding-right: 235px;
+    h3{
+        font-weight: $main_weight;
+        font-size: $main_size;
+        color: $main_color;
+        text-align: left;
+        margin-bottom: 31px;
+    }
+    p{
+        font-weight: $second_weight;
+        font-size: $main_size;
+        color: $main_color;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    a{
+        font-weight: $main_weight;
+        font-size: $second_size;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: $main_color;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+
+/* Особенности Талби */
+
+.thalby_features .container{
+    display: block;
+    padding-top: 190px;
+    padding-left: 188px;
+    padding-right: 188px;
+    h2{
+        font-weight: $second_weight;
+        font-size: $main_size;
+        text-align: center;
+        color: $main_color;
+        margin-bottom: 70px;
+    }
+}
+.features{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 52px;
+}
+.features_item{
+    display: block;
+    text-align: center;
+    width: 308px;
+    height: 167px;
+    gap: 24px;
+    margin-bottom: 110px;
+    p{
+        font-weight: $main_weight;
+        font-size: 30px;
+        text-align: center;
+        color: $main_color;
+    }
+}
+.circle_1{
+    border-radius: 35px;
+    width: 70px;
+    height: 70px;
+    background: #21f7ec;
+    margin-left: 134px;
+    margin-bottom: 26px;
+}
+.circle_2{
+    border-radius: 35px;
+    width: 70px;
+    height: 70px;
+    background: #33d3bc;
+    margin-left: 134px;
+    margin-bottom: 26px;
+}
+.circle_3{
+    border-radius: 35px;
+    width: 70px;
+    height: 70px;
+    background: #18a5c6;
+    margin-left: 134px;
+    margin-bottom: 26px;
+}
+.circle_4{
+    border-radius: 35px;
+    width: 70px;
+    height: 70px;
+    background: #d38f62;
+    margin-left: 134px;
+    margin-bottom: 26px;
+}
+.circle_5{
+    border-radius: 35px;
+    width: 70px;
+    height: 70px;
+    background: #f94c43;
+    margin-left: 134px;
+    margin-bottom: 26px;
+}
+.circle_6{
+    border-radius: 35px;
+    width: 70px;
+    height: 70px;
+    background: #d399ff;
+    margin-left: 134px;
+    margin-bottom: 26px;
+} 
+
+/* Интервью */
+
+.interviews .container{
+    display: block;
+    background: linear-gradient(180deg, $second_color 50%, #f0f0f0 50%);
+    padding-top: 52px;
+    padding-left: 188px;
+    padding-right: 188px;
+    padding-bottom: 52px;
+    h2{
+        font-weight: $main_weight;
+        font-size: $main_size;
+        text-align: center;
+        color: $main_color;
+        margin-bottom: 102px;
+    }
+} 
+.interview{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.interview_item{
+    display: block;
+    img{
+        width: 288px;
+        height: 351px;
+        margin-bottom: 35px;
+    }
+    h4{
+        font-weight: $main_weight;
+        font-size: 22px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: $main_color;
+        margin-bottom: 40px;
+    }
+    p{
+        font-weight: $second_weight;
+        font-size: 19px;
+        text-align: center;
+        color: $main_color;
+        margin-bottom: 44px;
+    }
+    a{
+        font-weight: $main_weight;
+        font-size: 18px;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: $main_color;
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+
+/* Форма для обратной связи */
+
+.get_advice .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 79px;
+    h2{
+        font-weight: $main_weight;
+        font-size: $main_size;
+        text-align: center;
+        color: $main_color;
+        margin-bottom: 9px;
+    }
+    p{
+        font-weight: $main_weight;
+        font-size: $second_size;
+        text-align: center;
+        color: $main_color;
+        margin-bottom: 26px;
+    }
+    form{
+        width: 366px;
+        height: 145px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 88px;
+    }
+} 
+input[type="text"] {
+    border: 1px solid $main_color;
+    width: 153px;
+    height: 39px;
+    font-weight: $second_weight;
+    font-size: 14px;
+    text-align: left;
+    color: #a0a0a0;
+    padding-left: 8px;
+    margin-bottom: 18px;
+}
+input[type="email"] {
+    border: 1px solid $main_color;
+    width: 366px;
+    height: 39px;
+    font-weight: $second_weight;
+    font-size: 14px;
+    text-align: left;
+    color: #a0a0a0;
+    padding-left: 8px;
+    margin-bottom: 16px;
+}
+.btn{
+    border: 1px solid $main_color;
+    border-radius: 100px;
+    width: 115px;
+    height: 33px;
+    background: $main_color;
+    font-weight: $second_weight;
+    font-size: 14px;
+    text-align: center;
+    color: $second_color;
+    margin-left: 126px;
+    &:hover{
+        background-color: $second_color;
+        color: $main_color;
+    }
+}
+
+/* Подвал */
+
+footer{
+    background: $main_color;
+    p{
+        font-family: $main_font;
+        font-weight: $second_weight;
+        font-size: 14px;
+        line-height: 165%;
+        text-align: center;
+        color: $second_color;
+        padding-bottom: 16px;
+    }
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 51px;
+    padding-left: 173px;
+    padding-right: 173px;
+}
+.links{
+    display: block;
+    img{
+        margin-bottom: 25px;
+    }
+}
+.social-media{
+    display: flex;
+    gap: 20px;
+}
+.media_icon:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+}
+.roadmap{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+.roadmap ul li:first-of-type{
+    font-family: $main_font;
+    font-weight: $second_weight;
+    font-size: 14px;
+    line-height: 165%;
+    color: $second_color;
+    margin-bottom: 36px;
+}
+
+.roadmap ul li a{
+    font-family: $main_font;
+    font-weight: $second_weight;
+    font-size: 14px;
+    line-height: 250%;
+    color: $second_color;
+    text-decoration: none;
+}
+
+.roadmap ul li a:hover{
+    text-decoration: underline;
+}

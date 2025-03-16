@@ -1,0 +1,611 @@
+@charset "UTF-8";
+@import "reset.css";
+@import "normalize.css";
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Главная страница */
+.container {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  padding-left: 188px;
+  padding-right: 188px;
+}
+@media screen and (max-width: 960px) {
+  header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 28px;
+}
+header nav ul li a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 165%;
+  color: #000;
+  text-decoration: none;
+  border-bottom: solid 1px transparent;
+}
+header nav ul li a:hover {
+  background-color: #fff;
+  color: #000;
+  border-bottom: solid 1px #000;
+}
+
+.desktop_control ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.desktop_control ul li a {
+  display: inline-block;
+}
+.desktop_control ul li a:hover {
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
+}
+
+.banner .container {
+  background: #f0efeb;
+  margin-bottom: 60px;
+}
+
+.banner article {
+  padding-left: 188px;
+  max-width: 544px;
+}
+.banner article h1 {
+  font-weight: 700;
+  font-size: 60px;
+  color: #000;
+  margin-bottom: 42px;
+}
+.banner article p {
+  font-weight: 400;
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 26px;
+}
+.banner article img {
+  max-width: 383px;
+  height: 521px;
+  padding-right: 188px;
+}
+@media screen and (max-width: 1024px) {
+  .banner article img {
+    width: 450px;
+  }
+}
+.banner article a {
+  border: 1px solid #000;
+  border-radius: 100px;
+  width: 129px;
+  height: 36px;
+  background: #000;
+  padding: 8px 23px;
+  font-weight: 400;
+  font-size: 17px;
+  color: #fff;
+  text-decoration: none;
+}
+.banner article a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Лучшие предложения */
+.best_sellers .container {
+  display: block;
+}
+
+.descriptions {
+  text-align: center;
+}
+
+.dscr_title_one {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 27px;
+}
+
+.dscr_one {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 47px;
+}
+
+.dscr_two {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 88px;
+}
+
+.dscr_title_two {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 52px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 240px;
+}
+
+.books img {
+  width: 315px;
+  height: 430px;
+  margin-bottom: 19px;
+}
+
+.books_dscr_one {
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 17px;
+}
+
+.books_dscr_two {
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.books a {
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #000;
+  margin-left: 111px;
+}
+.books a:hover {
+  text-decoration: none;
+}
+
+/* Люди и общество */
+.people_and_society .container {
+  background: rgba(204, 204, 204, 0.3);
+}
+
+.people_and_society article img {
+  padding-top: 76px;
+  padding-left: 188px;
+  padding-bottom: 51px;
+  width: 385px;
+  height: 525px;
+}
+.people_and_society article img h3 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #000;
+  text-align: left;
+  margin-bottom: 31px;
+}
+.people_and_society article img p {
+  font-weight: 400;
+  font-size: 36px;
+  color: #000;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.people_and_society article img a {
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #000;
+}
+.people_and_society article img a:hover {
+  text-decoration: none;
+}
+
+.people_and_society_dscr {
+  margin-left: 50px;
+  padding-right: 235px;
+}
+
+/* Культура и наследие */
+.culture_and_heritage .container {
+  background: rgba(204, 204, 204, 0.6);
+}
+
+.culture_and_heritage article img {
+  padding-top: 76px;
+  padding-right: 188px;
+  padding-bottom: 51px;
+  width: 385px;
+  height: 525px;
+}
+.culture_and_heritage article img h3 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #000;
+  text-align: right;
+  margin-bottom: 31px;
+}
+.culture_and_heritage article img p {
+  font-weight: 400;
+  font-size: 36px;
+  color: #000;
+  text-align: right;
+  margin-bottom: 40px;
+}
+.culture_and_heritage article img a {
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #000;
+  text-align: end;
+}
+.culture_and_heritage article img a:hover {
+  text-decoration: none;
+}
+
+.culture_and_heritage_dscr {
+  margin-right: 50px;
+  padding-left: 235px;
+}
+
+/* Политика и власть */
+.power_and_politics .container {
+  background: rgba(204, 204, 204, 0.3);
+}
+
+.power_and_politics article img {
+  padding-top: 76px;
+  padding-left: 188px;
+  padding-bottom: 51px;
+  width: 385px;
+  height: 525px;
+}
+.power_and_politics article img h3 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #000;
+  text-align: left;
+  margin-bottom: 31px;
+}
+.power_and_politics article img p {
+  font-weight: 400;
+  font-size: 36px;
+  color: #000;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.power_and_politics article img a {
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #000;
+}
+.power_and_politics article img a:hover {
+  text-decoration: none;
+}
+
+.power_and_politics_dscr {
+  margin-left: 50px;
+  padding-right: 235px;
+}
+
+/* Особенности Талби */
+.thalby_features .container {
+  display: block;
+  padding-top: 190px;
+  padding-left: 188px;
+  padding-right: 188px;
+}
+.thalby_features .container h2 {
+  font-weight: 400;
+  font-size: 36px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 70px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 52px;
+}
+
+.features_item {
+  display: block;
+  text-align: center;
+  width: 308px;
+  height: 167px;
+  gap: 24px;
+  margin-bottom: 110px;
+}
+.features_item p {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  color: #000;
+}
+
+.circle_1 {
+  border-radius: 35px;
+  width: 70px;
+  height: 70px;
+  background: #21f7ec;
+  margin-left: 134px;
+  margin-bottom: 26px;
+}
+
+.circle_2 {
+  border-radius: 35px;
+  width: 70px;
+  height: 70px;
+  background: #33d3bc;
+  margin-left: 134px;
+  margin-bottom: 26px;
+}
+
+.circle_3 {
+  border-radius: 35px;
+  width: 70px;
+  height: 70px;
+  background: #18a5c6;
+  margin-left: 134px;
+  margin-bottom: 26px;
+}
+
+.circle_4 {
+  border-radius: 35px;
+  width: 70px;
+  height: 70px;
+  background: #d38f62;
+  margin-left: 134px;
+  margin-bottom: 26px;
+}
+
+.circle_5 {
+  border-radius: 35px;
+  width: 70px;
+  height: 70px;
+  background: #f94c43;
+  margin-left: 134px;
+  margin-bottom: 26px;
+}
+
+.circle_6 {
+  border-radius: 35px;
+  width: 70px;
+  height: 70px;
+  background: #d399ff;
+  margin-left: 134px;
+  margin-bottom: 26px;
+}
+
+/* Интервью */
+.interviews .container {
+  display: block;
+  background: linear-gradient(180deg, #fff 50%, #f0f0f0 50%);
+  padding-top: 52px;
+  padding-left: 188px;
+  padding-right: 188px;
+  padding-bottom: 52px;
+}
+.interviews .container h2 {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 102px;
+}
+
+.interview {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.interview_item {
+  display: block;
+}
+.interview_item img {
+  width: 288px;
+  height: 351px;
+  margin-bottom: 35px;
+}
+.interview_item h4 {
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #000;
+  margin-bottom: 40px;
+}
+.interview_item p {
+  font-weight: 400;
+  font-size: 19px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 44px;
+}
+.interview_item a {
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #000;
+  margin-left: 107px;
+}
+.interview_item a:hover {
+  text-decoration: none;
+}
+
+/* Форма для обратной связи */
+.get_advice .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 79px;
+}
+.get_advice .container h2 {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 9px;
+}
+.get_advice .container p {
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 26px;
+}
+.get_advice .container form {
+  width: 366px;
+  height: 145px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 88px;
+}
+
+input[type=text] {
+  border: 1px solid #000;
+  width: 153px;
+  height: 39px;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+  color: #a0a0a0;
+  padding-left: 8px;
+  margin-bottom: 18px;
+}
+
+input[type=email] {
+  border: 1px solid #000;
+  width: 366px;
+  height: 39px;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+  color: #a0a0a0;
+  padding-left: 8px;
+  margin-bottom: 16px;
+}
+
+.btn {
+  border: 1px solid #000;
+  border-radius: 100px;
+  width: 115px;
+  height: 33px;
+  background: #000;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  margin-left: 126px;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Подвал */
+footer {
+  background: #000;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 51px;
+  padding-left: 173px;
+  padding-right: 173px;
+  margin-bottom: 20px;
+}
+footer .container p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 165%;
+  text-align: center;
+  color: #fff;
+}
+
+.links {
+  display: block;
+}
+.links img {
+  margin-bottom: 25px;
+}
+
+.social-media {
+  display: flex;
+  gap: 20px;
+}
+
+.media_icon:hover {
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
+}
+
+.roadmap {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.roadmap ul li:first-of-type {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 165%;
+  color: #fff;
+  margin-bottom: 36px;
+}
+
+.roadmap ul li a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 250%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.roadmap ul li a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=preprocessor.css.map */

@@ -1,3 +1,263 @@
+@media only screen and (max-width: 1024px){
+    header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    header nav ul {
+        gap: 20px;
+    }
+    header a img{
+        padding-right: 80px;
+    }
+    .desktop_control ul{
+        gap: 20px;
+    }
+    .banner .container{
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+        padding-bottom: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .banner article{
+        padding-left: 0;
+        width: 400px;
+    }
+    .banner article img{
+        padding-right: 0;
+        margin-left: 40px;
+    }
+    .cards{
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 60px;
+    }
+    .people_and_society .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .people_and_society article img{
+        padding-left: 0;
+    }
+    .people_and_society_dscr{
+        margin-left: 20px;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .culture_and_heritage .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .culture_and_heritage article img{
+        padding-right: 0;
+    }
+    .culture_and_heritage_dscr{
+        margin-right: 20px;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .culture_and_heritage_dscr a{
+        margin-left: 0;
+        text-align: end;
+    }
+
+    .power_and_politics .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .power_and_politics article img{
+        padding-left: 0;
+    }
+    .power_and_politics_dscr{
+        margin-left: 20px;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .thalby_features .container{
+        padding-top: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-wrap: wrap;
+    }
+    .interviews .container{
+        padding-top: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+    }
+    .interview{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .get_advice .container{
+        padding-top: 40px;
+    }
+    .get_advice form{
+        margin-bottom: 40px;
+    }
+    footer .container{
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    footer p{
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 840px){
+    .banner .container{
+        justify-content: center;
+    }
+    .banner article{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    header nav{
+        display: none;
+    }
+    header a img{
+        margin-left: 280px;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    .people_and_society .container{
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .people_and_society article img{
+        padding-left: 0;
+    }
+    .people_and_society_dscr{
+        margin-left: 0;
+        padding-right: 0;
+    }
+    .people_and_society article h3{
+        text-align: center;
+    }
+    .people_and_society article p{
+        text-align: center;
+    }
+    .culture_and_heritage .container{
+        flex-direction: column-reverse;
+        padding-bottom: 30px;
+    }
+    .culture_and_heritage article img{
+        padding-right: 0;
+    }
+    .culture_and_heritage_dscr{
+        margin-right: 0;
+        padding-left: 0;
+    }
+    .culture_and_heritage article h3{
+        text-align: center;
+    }
+    .culture_and_heritage article p{
+        text-align: center;
+    }
+    .culture_and_heritage article a{
+        margin-left: 0;
+        text-align: center;
+    }
+    .power_and_politics .container{
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .power_and_politics article img{
+        padding-left: 0;
+    }
+    .power_and_politics_dscr{
+        margin-left: 0;
+        padding-right: 0;
+    }
+    .power_and_politics article h3{
+        text-align: center;
+    }
+    .power_and_politics article p{
+        text-align: center;
+    }
+    .interview{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 655px){
+    .descriptions{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .features{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    header a img{
+        margin-left: 180px;
+    }
+    .desktop_control ul{
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    header a img{
+        margin-left: 150px;
+    }
+    .desktop_control ul{
+        gap: 5px;
+    }
+    .banner article img {
+        margin-left: 10px;
+    }
+    .get_advice .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    footer .container{
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+    }
+    .links{
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+        margin-bottom: 30px;
+    }
+    .links img{
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .roadmap{
+        gap: 100px;
+    }
+    .roadmap ul li:first-of-type{
+        margin-bottom: 20px;
+    }
+    footer p{
+        padding-bottom: 20px;
+    }
+}
+
+
 @media only screen and (max-width: 430px){
     header{
         padding-left: 0px;
@@ -13,7 +273,7 @@
         display: none;
     }
     header a img{
-        margin-left: 160px;
+        margin-left: 100px;
     }
     .desktop_control ul{
         gap: 5px;
@@ -26,16 +286,11 @@
         flex-direction: column-reverse;
         padding-bottom: 60px;
     }
-    .banner article{
-        padding-left: 0;
-        max-width: 400px;
-    }
     .banner article img{
-        max-width: 400px;
         margin-left: 0;
     }
-    .banner article h1{
-        margin-bottom: 32px;
+    .banner article{
+        width: 320px;
     }
     .cards{
         flex-direction: column;
@@ -88,96 +343,137 @@
         margin-left: 0;
         padding-right: 0;
     }
-    .thalby_features .container{
-        display: block;
-        padding-top: 60px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .features{
-        margin-bottom: 0;
-    }
-    .features_item{
-        width: 188px;
-        height: 250px;
-        margin-bottom: 0;
-        gap: 0;
-    }
-    .circle_1{
-        margin-left: 64px;
-    }
-    .circle_2{
-        margin-left: 64px;
-    }
-    .circle_3{
-        margin-left: 64px;
-    }
-    .circle_4{
-        margin-left: 64px;
-    }
-    .circle_5{
-        margin-left: 64px;
-    }
-    .circle_6{
-        margin-left: 64px;
-    }
-    .interviews .container{
-        padding-top: 0;
-        padding-left: 0;
-        padding-right: 0;
-        padding-bottom: 0;
-        background: none;
-    }
-    .interview{
-        flex-direction: column;
-    }
-    .interview_item{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: linear-gradient(180deg, #fff 50%, #f0f0f0 50%);
-        padding-bottom: 20px;
-    }
-    .interview_item img{
-        margin-bottom: 20px;
-    }
-    .interview_item h4{
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-bottom: 15px;
-    }
-    .interview_item p{
-        margin-bottom: 25px;
-    }
-    .interview_item a{
-        margin-left: 0;
-    }
     .get_advice .container{
         padding-top: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .get_advice form{
         margin-bottom: 40px;
     }
-    footer .container{
-        padding-top: 20px;
-        padding-left: 0;
-        padding-right: 0;
+}
+
+@media only screen and (max-width: 420px){
+    .banner article img{
+        max-width: 288px;
+        height: 351px;
+        margin-left: 40px;
+    }
+    .people_and_society article img{
+        max-width: 288px;
+        height: 401px;
+    }
+    .culture_and_heritage article img{
+        max-width: 288px;
+        height: 401px;
+    }
+    .power_and_politics article img{
+        max-width: 288px;
+        height: 401px;
+    }
+    .circle_1{
+        margin-left: 120px;
+    }
+    .circle_2{
+        margin-left: 120px;
+    }
+    .circle_3{
+        margin-left: 120px;
+    }
+    .circle_4{
+        margin-left: 120px;
+    }
+    .circle_5{
+        margin-left: 120px;
+    }
+    .circle_6{
+        margin-left: 120px;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    header a img{
+        margin-left: 90px;
+    }
+    .get_advice .container form{
         flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 280px;
+        height: 250px;
+    }
+    input[type="text"] {
+        width: 280px;
+    }
+    input[type="email"] {
+        width: 280px;
+    }
+    .btn{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    header a img{
+        margin-left: 80px;
+    }
+    footer .container{
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .links{
-        display: flex;
-        justify-content: space-between;
-        gap: 100px;
-        margin-bottom: 30px;
-    }
-    .links img{
-        margin-left: 0;
-        margin-bottom: 0;
+        gap: 70px;
     }
     .roadmap{
-        gap: 100px;
+        gap: 50px;
     }
-    .roadmap ul li:first-of-type{
-        margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 360px){
+    header a img{
+        margin-left: 72px;
+    }
+    .banner article{
+        width: 280px;
+    }
+    .banner article img{
+        margin-left: 0;
+    }
+    .books img{
+        max-width: 288px;
+        height: 401px;
+    }
+}
+
+@media only screen and (max-width: 340px){
+    header a img{
+        margin-left: 38px;
+    }
+    .links{
+        gap: 50px;
+    }
+    .roadmap{
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .circle_1{
+        margin-left: 110px;
+    }
+    .circle_2{
+        margin-left: 110px;
+    }
+    .circle_3{
+        margin-left: 110px;
+    }
+    .circle_4{
+        margin-left: 110px;
+    }
+    .circle_5{
+        margin-left: 110px;
+    }
+    .circle_6{
+        margin-left: 110px;
     }
 }
