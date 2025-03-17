@@ -47,6 +47,20 @@ header nav ul li a:hover {
   border-bottom: solid 1px #000;
 }
 
+header a img {
+  z-index: 100;
+  position: relative;
+}
+
+.nav-but-wrap {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-but-wrap {
+    display: inline-block;
+  }
+}
 .desktop_control ul {
   display: flex;
   align-items: center;
